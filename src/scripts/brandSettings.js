@@ -35,7 +35,7 @@ export const brandSettings = {
     },
     favicon: "img/favicon.png", // Add favicon URL here
     typography: {
-        primaryFont: "Helvetica Neue",  // this will automatically get set as the page font
+        primaryFont: "Helvetica",  // this will automatically get set as the page font
         secondaryFont: "Verdana", // dont be a bum, go find some google/adobe fonts you like. just make sure to load them in the stylesheet or Layout astro file 
         baseSize: "16px",
         lineHeight: "1.5",
@@ -44,10 +44,9 @@ export const brandSettings = {
     palette: [ // these will load automatically into your page into the color section
         { name: "White", hex: "#ffffff" },
         { name: "Black", hex: "#000000" },
-        { name: "Primary Blue", hex: "#0056b3" },
-        { name: "Secondary Teal", hex: "#17a2b8" },
-        { name: "Accent Yellow", hex: "#ffc107" },
-        { name: "Dark Gray", hex: "#343a40" },
-        { name: "Light Gray", hex: "#f8f9fa" }
+        { name: "Primary Red", hex: "#e30118" },
+        { name: "Secondary Yellow", hex: "#fdd900" },
+        { name: "Tertiary Blue", hex: "#3671c6" },
+        // { name: "Dark Gray", hex: "#343a40" }, { name: "Light Gray", hex: "#f8f9fa" }//
     ]
 };
