@@ -6,19 +6,26 @@ import { brandSettings } from '../../scripts/brandSettings.js';
 <section id="color">
                 <h2>Colors</h2>
                 
-                <InstructionNote>
+                <!-- <InstructionNote>
                     Define your brand's primary and extended color palettes. Research and document the required WCAG contrast ratios for text and non-text UI elements, then verify your palette meets these standards.
-                </InstructionNote>
+                </InstructionNote> -->
 
                 <h3>Brand Palette</h3>
                 <ColorSwatch />
 
                 <h3>Color Usage Policy</h3>
-                <p><strong>Use of Color:</strong> [Define your brand's policy on relying solely on color to convey meaning, state, or information (e.g., in error states or links). Assume your user is marketing and design team membrs who might not have any prior accessibility knowledge.]</p>
+                <p><strong>Use of Color:</strong> For the brand and digital properties of Red Bull, color must never be the only method used to communicate meaning, status, or required action. This policy ensures that all users—including those with color vision deficiencies or low vision—can clearly understand information and interact with content. Designers and marketers should always pair color with at least one additional visual cue. Color can support meaning, but it should never be the only indicator.</p>
 
                 <h3>Text Contrast Playground</h3>
-                <p>[Define the minimum contrast ratio required for normal text vs. large text according to WCAG 2.1 AA, explain to users what the tool below helps them do and how they can use it]</p>
-                
+                <p>For digital products and marketing materials produced by Red Bull, text must meet the minimum color contrast requirements defined in Web Content Accessibility Guidelines 2.1 Level AA. These requirements ensure that text remains readable for users with low vision or reduced contrast sensitivity. When designing web pages, marketing landing pages, or apps for Red Bull:
+                </p>
+                <ul>
+                    <li>Body text must meet 4.5:1 contrast.</li>
+                    <li>Headlines that qualify as large text must meet 3:1.</li>
+                    <li>Buttons, labels, and navigation text should follow the 4.5:1 rule unless they qualify as large text.</li>
+                    <li>Always test contrast using a contrast checker like the one below during design review.</li>
+                </ul>
+                <p>The contrast checker below is a simple tool that helps designers and marketers verify that text is easy to read against its background color. It calculates the contrast ratio between two colors and tells you whether the combination meets accessibility requirements defined in Web Content Accessibility Guidelines 2.1.</p>
                 <div id="contrast-calculator" class="contrast-calculator" data-palette={JSON.stringify(brandSettings.palette)}>
                     <div class="calculator-controls">
                         <div class="control-group">
@@ -84,13 +91,52 @@ import { brandSettings } from '../../scripts/brandSettings.js';
                 </div>
 
                 <h3>Non-Text Contrast (UI Elements)</h3>
-                <p>[Define the minimum contrast ratio required for interactive components like buttons, input borders, and icons against their adjacent backgrounds.]</p>
+                <p>Minimum contrast ratio for interactive components (buttons, input borders, icons, etc) is 3:1. </p>
 
                 <h3>Inline Links</h3>
-                <p>[Define the visual style for inline links to ensure they are clearly identifiable within content.]</p>
+                <p>For digital content produced by Red Bull, inline links must be visually distinct from surrounding text so users can easily identify interactive elements. These guidelines align with the accessibility requirements in Web Content Accessibility Guidelines 2.1 and help ensure links remain clear for all users, including those with color vision deficiencies or low vision.</p>
                 <ul>
-                    <li><strong>Text Decoration:</strong> [Specify if links are underlined. WCAG recommends underlines so links are distinguishable by more than just color.]</li>
-                    <li><strong>Color Contrast:</strong> [Ensure link color meets 4.5:1 contrast against the background.]</li>
-                    <li><strong>Hover & Focus:</strong> [Describe the visual change on interaction (e.g., darker shade, background highlight) to indicate interactivity.]</li>
+                    <li><strong>Text Decoration:</strong> Inline links must be underlined by default when placed within paragraphs or other blocks of text. The underline should remain visible and not be removed by default styling and underline thickness should remain readable at all font sizes.</li>
+                    <li><strong>Color Contrast:</strong> Link text must meet the minimum contrast ratio of 4.5:1 against the background to ensure readability. Links should also be visibly distinct from surrounding text color and avoid low-contrast color combinations.</li>
+                    <li><strong>Hover:</strong> </li>
+                         <ul>
+                            <li>The link color should change to a darker or lighter shade</li>
+                            <li>The underline may thicken or animate</li>
+                            <li>Optional: a subtle background highlight may appear</li>
+                        </ul>
+                    <li><strong>Focus:</strong> The link must display a visible focus indicator. This may include:</li>
+                        <ul>
+                            <li>A focus outline</li>
+                            <li>A background highlight</li>
+                            <li>A contrast ring around the link</li>
+                        </ul>
                 </ul>
-            </section>
+                <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">State</th>
+                            <th scope="col">Appearance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Default</td>
+                            <td>Underlined link text with accessible contrast</td>
+                        </tr>
+                        <tr>
+                            <td>Hover</td>
+                            <td>Color shifts to darker/lighter shade</td>
+                        </tr>
+                        <tr>
+                            <td>Focus</td>
+                            <td>Visible outline or highlight appears</td>
+                        </tr>
+                        <tr>
+                            <td>Active</td>
+                            <td>Slight color shift or underline emphasis</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+  </section>

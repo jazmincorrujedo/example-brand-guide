@@ -35,18 +35,19 @@ export const brandSettings = {
     },
     favicon: "img/favicon.png", // Add favicon URL here
     typography: {
-        primaryFont: "Helvetica",  // this will automatically get set as the page font
-        secondaryFont: "Verdana", // dont be a bum, go find some google/adobe fonts you like. just make sure to load them in the stylesheet or Layout astro file 
+        primaryFont: "Montserrat",  // this will automatically get set as the page font
+        secondaryFont: "Futura", // dont be a bum, go find some google/adobe fonts you like. just make sure to load them in the stylesheet or Layout astro file 
         baseSize: "16px",
         lineHeight: "1.5",
         paragraphSpacing: "2"
     },
     palette: [ // these will load automatically into your page into the color section
-        { name: "White", hex: "#ffffff" },
-        { name: "Black", hex: "#000000" },
-        { name: "Primary Red", hex: "#e30118" },
-        { name: "Secondary Yellow", hex: "#fdd900" },
-        { name: "Tertiary Blue", hex: "#3671c6" },
-        // { name: "Dark Gray", hex: "#343a40" }, { name: "Light Gray", hex: "#f8f9fa" }//
+        { name: "RedBull Red", hex: "#CC1E4A" },
+        { name: "Outrageous Orange", hex: "#F4801F" },
+        { name: "Sunbelt Yellow", hex: "#FFC906" },
+        { name: "Deep Bull Blue", hex: "#004C6C" },
+        { name: "Soaring Blue", hex: "#008CD1" },
+        { name: "Almost Black", hex: "#171717" }, 
+        { name: "Almost White", hex: "#F4F5F5" }
     ]
 };
