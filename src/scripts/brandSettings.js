@@ -33,7 +33,7 @@ export const brandSettings = {
             }
         ]
     },
-    favicon: "public/img/favicon.png", // Add favicon URL here
+    favicon: "img/favicon.png", // Add favicon URL here
     typography: {
         primaryFont: "Montserrat",  // this will automatically get set as the page font
         secondaryFont: "Futura", // dont be a bum, go find some google/adobe fonts you like. just make sure to load them in the stylesheet or Layout astro file 
