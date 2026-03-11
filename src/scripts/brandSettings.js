@@ -19,7 +19,7 @@ export const brandSettings = {
             },
             { 
                 name: "Monochrome - Black", 
-                src: "img/redbullblackandwhite2.svg", // Add image path
+                src: "/img/redbullblackandwhite2.svg", // Add image path
                 bg: "#ffffff", 
                 darkText: true,
                 description: "For black and white print or single-color applications."
