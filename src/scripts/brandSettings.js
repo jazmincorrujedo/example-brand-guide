@@ -27,7 +27,7 @@ export const brandSettings = {
             { 
                 name: "Monochrome - White", 
                 src: "img/redbullblackandwhite.svg", // Add image path
-                bg: "#000000", 
+                bg: "#090808", 
                 darkText: false,
                 description: "For dark backgrounds where color is not permitted."
             }
